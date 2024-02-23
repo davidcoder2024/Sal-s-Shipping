@@ -1,1 +1,46 @@
-https://gist.github.com/codecademydev/3dfc3f666a391ab134a32aa9cfd6a483 
+weight = 4.8
+
+#Ground Shipping
+
+if weight <= 2:
+  cost_ground_shipping = weight * 1.50 + 20
+elif weight > 2 and weight <= 6:
+  cost_ground_shipping = weight * 3 + 20
+elif weight > 6 and weight <= 10:
+  cost_ground_shipping = weight * 4 + 20
+elif weight >10:
+  cost_ground_shipping = weight * 4.75 + 20
+else:
+  cost_ground_shipping = n/a
+
+print("Ground Shipping = $", end="")
+print(cost_ground_shipping)
+
+
+#Ground Shipping Premium
+
+cost_ground_premium = 125.00
+
+print("Ground Shipping Premium = $", end= "") 
+print(cost_ground_premium)
+
+#Drone Shipping
+
+if weight <= 2:
+  cost_drone_shipping = weight * 4.5 + 0
+elif weight > 2 and weight <= 6:
+  cost_drone_shipping = weight * 9 + 0 
+elif weight > 6 and weight <= 10:
+  cost_drone_shipping = weight * 12 + 0
+elif weight >10:
+  cost_drone_shipping = weight * 14.25 + 0
+else:
+  cost_drone_shipping = n/a
+
+print("Drone Shipping = $", end= "")
+print(cost_drone_shipping)
+
+
+
+
+
